@@ -1,38 +1,75 @@
+/* App.css */
+
+/* Overall App Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
 .App {
-  text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff; /* Bootstrap primary color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    display: flex;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.articles {
+    margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card Styles */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+.read-more-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit
+    ); /* Responsive grid with minimum card width */
+    gap: 20px; /* Space between cards */
 }
